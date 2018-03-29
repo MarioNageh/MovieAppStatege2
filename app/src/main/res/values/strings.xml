@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Movies app</string>
+
+
+    <string name="item_Most_Popular">Most Popular</string>
+    <string name="item_Top_Rated">Top Rated</string>
+
+
+    <string name="No_Internet">No Internet Connetion</string>
+    <string name="NoMoreFilms">No More Movies GoodLuck</string>
+    <string name="refresh">Refresh Connection</string>
+    <string name="Polt_Synopsis">Polt Synopsis :</string>
+    <string name="Trailers">Trailers :</string>
+    <string name="Reviews">Reviews :</string>
+    <string name="favorite">Favorites </string>
+    <string name="movie_item_btn_favorite_desc">Save to favorites</string>
+    <string name="movie_image_desc">Movie image</string>
+
+</resources>

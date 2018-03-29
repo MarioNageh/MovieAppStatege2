@@ -1,0 +1,79 @@
+<android.support.v7.widget.CardView
+    android:id="@+id/movie_item_container"
+    style="@style/MovieItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="@drawable/item_effect_clcik"
+    app:cardCornerRadius="4dp"
+    android:clickable="true"
+    tools:layout_margin="@dimen/item_spacing_full">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.example.user.moveappstage1.Ui.AspectLockedImageView
+            android:id="@+id/movie_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/movie_image_desc"
+            android:scaleType="centerCrop"
+            android:src="@color/movie_poster_placeholder"
+            app:imageAspectRatio="@dimen/movie_item_image_aspect_ratio"
+            tools:layout_width="300dp"
+            tools:src="@drawable/ic_favoruti_checked" />
+
+        <LinearLayout
+            android:layout_gravity="bottom"
+          android:background="#dfff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/keyline_1"
+                android:layout_marginLeft="@dimen/keyline_1"
+                android:layout_marginStart="@dimen/keyline_1"
+                android:layout_marginTop="@dimen/keyline_1"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/movie_item_title"
+                    style="@style/MovieItemText"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textAppearance="?android:textAppearanceListItem"
+                    tools:text="Prisoffffffffffffffffffffffn" />
+                <RatingBar
+                    android:id="@+id/ratingd_bar_Movie_item"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:numStars="5"
+                    android:stepSize=".5"
+                    android:theme="@style/RatingBarMovieItem" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/movie_item_btn_favorite"
+                style="@style/FavoriteButton"
+                android:scaleType="centerInside"
+                android:contentDescription="@string/movie_item_btn_favorite_desc" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

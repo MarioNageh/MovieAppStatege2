@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.moveappstage1.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_mainactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ToolbarColoredBackArrow2"
+        app:titleTextColor="@android:color/holo_blue_dark"></android.support.v7.widget.Toolbar>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/toolbar_mainactivity"
+            android:id="@+id/tv_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+android:layout_centerVertical="true"
+android:layout_centerHorizontal="true"
+        android:id="@+id/probar_loading"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:visibility="visible" />
+
+</RelativeLayout>

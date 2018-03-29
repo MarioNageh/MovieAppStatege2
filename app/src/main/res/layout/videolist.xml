@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:background="@android:color/transparent"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:foreground="@drawable/item_effect_clcik"
+    android:layout_height="125dp">
+
+    <LinearLayout
+        android:background="#000000"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<ImageView
+    android:scaleType="fitXY"
+    android:id="@+id/Video_Iamge"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@mipmap/ic_launcher"
+  />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:id="@+id/Video_Title"
+        style="@style/MovieItemText"
+        android:lines="1"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_xsmall"
+        android:textStyle="bold"
+        tools:text="Jurassic World" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_movie_paly"
+        android:layout_gravity="center_horizontal|center"
+        />
+</android.support.v7.widget.CardView>
